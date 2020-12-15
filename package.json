@@ -1,0 +1,46 @@
+{
+  "name": "tiny-container",
+  "version": "0.1.0",
+  "description": "Lightweight dependency injection container for Node.js",
+  "author": {
+    "name": "Axel SHAÏTA",
+    "email": "shaita.axel@gmail.com",
+    "url": "https://www.codeheroes.fr"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ioc",
+    "container",
+    "service container",
+    "di",
+    "dependency injection"
+  ],
+  "main": "./lib",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkerone/tiny-container.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arkerone/tiny-container/issues"
+  },
+  "homepage": "https://github.com/arkerone/tiny-container#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "eslint": "^7.15.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "husky": "^4.3.6",
+    "standard-version": "^9.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
